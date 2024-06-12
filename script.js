@@ -37,6 +37,28 @@ function switchPlayer() {
   player1.classList.toggle('player--active');
 }
 
+//New Game Function
+function newGame() {
+  player0.classList.add('player--active');
+  player0.classList.remove('player--winner');
+  player1.classList.remove('player--active');
+  player1.classList.remove('player--winner');
+
+  rollDice.classList.add('hidden');
+
+  currentScore = 0;
+  activePlayer = 0;
+
+  score0.textContent = 0;
+  score1.textContent = 0;
+  current0.textContent = 0;
+  current1.textContent = 0;
+
+  btnHold.disabled = false;
+  btnRoll.disabled = false;
+}
+newGame();
+
 //Button Roll Dice
 /*
 Click to roll the dice 
@@ -83,3 +105,9 @@ btnHold.addEventListener('click', function () {
     switchPlayer();
   }
 });
+
+//Button New Game
+/*
+Click to restart de game and reset game setings
+*/
+btnNew.addEventListener('click', newGame);
