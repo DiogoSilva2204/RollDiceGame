@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
@@ -55,6 +55,13 @@ main {
 }
 
 .score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: auto;
+}
+
+.win {
   font-size: 8rem;
   font-weight: 300;
   color: #000000;
@@ -155,7 +162,16 @@ main {
 
 .player--winner .name {
   font-weight: 700;
-  color: #c7365f;
+  color: #48ff76;
+}
+
+.player--winner .score {
+  font-weight: 700;
+  color: #48ff76;
+}
+.player--winner .win {
+  font-weight: 700;
+  color: #48ff76;
 }
 
 .hidden {
