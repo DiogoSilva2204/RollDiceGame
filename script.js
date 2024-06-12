@@ -10,9 +10,12 @@ const current1 = document.getElementById('current--1');
 //Players Hold Score
 const score0 = document.getElementById('score--0');
 const score1 = document.getElementById('score--1');
-//Playes Name
+//Players Name
 const playerName0 = document.getElementById('name--0');
 const playerName1 = document.getElementById('name--1');
+//Players Win Text
+const playerWin0 = document.getElementById('win--0');
+const playerWin1 = document.getElementById('win--1');
 //Buttons
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
@@ -53,6 +56,8 @@ function newGame() {
   score1.textContent = 0;
   current0.textContent = 0;
   current1.textContent = 0;
+  playerWin0.textContent = '';
+  playerWin1.textContent = '';
 
   btnHold.disabled = false;
   btnRoll.disabled = false;
